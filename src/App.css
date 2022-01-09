@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  background-color: #fff !important;
+}
+.navbar-brand{
+  font-size: 1.9rem !important;
+  color: #565387 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar-a{
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.menu_active{
+  border-bottom: 1px solid #565387;
+  font-weight: bold;
+}
+
+.navbar a:hover{
+  color: #3498db !important;
+}
+@media (max-width: 9991px){
+  .navbar-brand{
+    font-size: 1.5rem !important;
   }
+ 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.brand-name{
+  color: #372a93 !important;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* CSS */
+.button-36 {
+  background: #372a93;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.button-36:hover {
+  box-shadow: rgba(120,145,255) 0 1px 30px;
+  background-color: #fff;
+  color: rgba(120,145,255);
+  transition-duration: .5s;
+}
+
+/* @media (min-width: 768px) {
+  .button-36 {
+    padding: 0 2.6rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
+} */
+#header{
+  width: 100%;
+  height:80vh;
+  margin-top: 70px;
 }
+
+#header h1{
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+
+}
+#header h5{
+  margin: 10px ;
+  font-size: 24px;
+  font-weight: 700;
+  color: #372a93 !important;
+}
+.header-img
+{
+justify-content: center;
+}
+
+#header h2{
+color: #484848;
+font-size: 18px;
+}
+
+#header .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes up-down {0%
+{
+transform: translateY(10px);
+}100%{
+transform: translateY(-10px);
+}
+
+}
+@keyframes up-down {0%
+  {
+  transform: translateY(10px);
+  }100%{
+  transform: translateY(-10px);
+  }
+  
+  }
+  
